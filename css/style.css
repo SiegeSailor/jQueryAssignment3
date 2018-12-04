@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* jQuery Assignment 3 */
+.wrap {
+	font-family:Microsoft JhengHei;
+	word-break: break-all;
+	/*overflow-x: hidden;*/
+}
+.topsection {
+	background-color: #f6f6f6;
+}
+.socialsection {
+	max-width:1000px;
+	margin:0 auto;
+	margin-bottom: 10px;
+}
+.socialsection ul {
+	float:right;
+	padding:8px 0px 8px 0px;
+	margin-right: 1.6%;
+	margin-left:1.6%;
+}
+.socialsection ul li {
+	float:left;
+	padding:0px 0px 0px 10px;
+}
+.socialsection ul li img {
+	margin-right: 5px;
+}
+.socialsection ul li a {
+	display: block;
+	float:left;
+	text-decoration: none;
+}
+.facebooktitle a {
+	color:#566da7;
+}
+.twittertitle a {
+	color:#3fb5ed;
+}
+.clearfix {
+	clear: both;
+}
+.secondsection {
+	box-shadow: 0px 2.5px 2.5px lightgrey;
+}
+.menu {
+	max-width:1000px;
+	margin:0 auto;
+	margin-bottom: 10px;
+}
+.menu h1, .footer h1 {
+	width:170px;
+	height:36px;
+	background: url("../img/hexschoollogo.jpg") no-repeat;
+	float:left;
+	margin-top:4px;
+	margin-left:1.6%;
+}
+@media(max-width: 767px){
+	.menu h1 {
+		margin:0 auto;
+		display: block;
+		float:none;
+	}
+}
+.menu h1 a, .footer h1 a {
+	display: block;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.menu > ul {
+	float:right;
+}
+@media(max-width: 767px){
+	.menu > ul {
+		float:none;
+		margin-top:10px;
+	}
+}
+.menu > ul > li {
+	float:left;
+	position: relative;
+}
+@media(max-width: 767px){
+	.menu > ul > li {
+		width:50%;
+		border:0.25px solid lightgrey;
+		box-sizing: border-box;
+	}
+}
+.menu > ul > li > ul {
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+.menu ul li a {
+	font-size: 14px;
+	height:25px;
+	line-height:25px;
+	text-decoration: none;
+
+}
+.menu > ul > li > a {
+	display: block;
+	height:50px;
+	line-height:50px;
+	color:#00cc99;
+	font-size: 16px;
+	height:50px;
+	line-height:50px;
+	font-weight: bold;
+	box-sizing: border-box;
+	text-align: center;
+	padding:0px 15px 0px 15px;
+}
+.menu > ul > li > a:hover,
+.menu > ul > li > a.dropdownlist-active {
+	border-bottom: 5px solid #00cc99;
+	background:none;
+}
+.menu > ul > li > ul > li {
+	border: 1px solid #dddddd;
+	background:white;
+	box-sizing: border-box;
+	text-align: center;
+}
+.menu > ul > li > ul > li:hover {
+	background:#f6f6f6;
+}
+.features {
+	max-width:1000px;
+	margin:0 auto;
+}
+.features ul li {
+	float:left;
+	width:30%;
+	margin:0px 1.6% 50px 1.6%;
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px #d6d6d6;
+	padding:0px 2.5%;
+	box-sizing: border-box;
+}
+.features > ul > li {
+	height: 375px;
+}
+@media(max-width: 767px){
+	.features ul li {
+		width:96.8%;
+		height: auto;
+		text-align: center;
+	}
+}
+.features ul li a {
+	height: 136px;
+	display: block;
+	padding: 20px 0px 10px 0px;
+}
+.features ul li a img {
+	margin:auto;
+	display: block;
+}
+.rwdclassfix {
+	padding-top: 27.5px;
+}
+.jqueryclassfix {
+	padding-top: 9px;
+}
+.features ul li h2 {
+	font-size: larger;
+	font-weight: bold;
+	text-align: center;
+}
+.features ul li p {
+	display: block;
+	margin: 7px 5% 15px 5%;
+	text-align: left;
+	line-height: 25px;
+	font-size: 14px;
+}
+@media(max-width: 767px){
+	.features ul li p {
+		text-align: center;
+	}
+}
+.features ul li ul {
+	margin-top:-15px;
+	margin-bottom:15px;
+}
+.features ul li ul li {
+	font-size: 14px;
+	float:none;
+	width:100%;
+	line-height: 25px;
+	margin:0px 0px 0px 5%;
+	box-shadow: 0px 0px 0px #fff;
+	list-style: initial;
+}
+@media(max-width: 767px){
+	.features ul li ul li {
+		list-style: none;
+		margin:0px;
+	}
+}
